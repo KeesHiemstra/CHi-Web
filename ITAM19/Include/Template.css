@@ -1,0 +1,241 @@
+/* Template stylesheets */
+
+/* tag styles */
+body, table {
+	border: 0;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+caption {
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+td {
+	font-size: 8pt;
+}
+
+th {
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+select {
+	border: 1px black solid;
+	font-family: verdana,Sans-Serif;
+	font-size: 8pt;
+	height: 12pt;
+	width: 300px;
+}
+
+a {
+	color: #000000;
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+ul 
+{
+	font-size:10pt;	
+}
+
+/* class styles */
+
+/* Header and Footer */
+.footer {
+	background-color: #39291C;
+	text-align: right;
+	color: #ffffff;
+}
+
+.title {
+	background-color: #39291C;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.subtitle {
+	font-size: 24px;
+	text-align: center;
+	vertical-align: middle
+}
+
+.rightheader {
+	background-color: #39291C;
+}
+
+/* commonly used class styles */
+.DataDisplay {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-size: 8pt;
+}
+
+.menutitle {
+	border-color: #000000;
+	font-size: 12px;
+	vertical-align: middle;
+	font-weight: bold;
+	background-color: #dddddd;
+}
+
+.menusubtitle {
+	border-color: #000000;
+	font-size: 11px;
+	vertical-align: middle;
+	font-weight: bold;
+	background-color: #ececee;
+}
+
+.menuitems {
+	font-size: 10pt;
+	vertical-align: top;
+}
+
+.textbox {
+	border: 1px solid;
+}
+
+.textbox280 {
+	border: 1px solid;
+	font-size: 8pt;
+	width: 280px;
+}
+
+.textbox260 {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	border: 1px solid;
+	font-size: 8pt;
+	width: 260px;
+}
+
+.textbox128 {
+	border: 1px solid;
+	font-size: 8pt;
+	width: 128px;
+}
+
+.textboxDate {
+	border: 1px solid;
+	font-size: 8pt;
+	width: 74px;
+}
+
+.SelectCurrency {
+	border: 1px solid;
+	font-size: 8pt;
+	width: 50px;
+}
+
+.SmallSelect {
+	border: 1px solid;
+	font-size: 8pt;
+	width: 150px;
+}
+
+.datebox {
+	border: 1px solid;
+	font-size: 8pt;
+	width: 70px;
+}
+
+.checkbox {
+	height: 15;
+	width: 15;
+	border: 1;
+}
+
+.radioinput {
+	border: 0px;
+}
+
+.alert {
+	font-size: 8pt;
+	font-weight: normal;
+	color: #ff0000;
+}
+
+.acmacd-color {
+	color: #B8860B;
+}
+
+.acmacd-bgcolor {
+	background-color: #B8860B;
+}
+
+.acassetlist-color {
+	color: #2E8B57;
+}
+
+.acassetlist-bgcolor {
+	background-color: #2E8B57;
+}
+
+.scrollbox {
+	overflow: auto;
+	width: 970px;
+	border: 1px #000000 solid;
+	padding: 0px;
+}
+
+.LoginBtn {
+	width: 60;
+	font-size: 10pt;
+	line-height: 12px;
+}
+
+.SearchBtn {
+	width: 60;
+	height: 21;
+}
+
+.TransferBtn {
+	height: 25;
+	width: 125;
+}
+
+.SaveBtn {
+	height: 25;
+	width: 70;
+}
+
+.deleted {
+	color: #ff0000;
+	text-decoration: line-through;
+}
+
+.SmallBtn {
+	width: 75;
+	vertical-align: top;
+	font-size: 9pt;
+	line-height: 10px;
+}
+
+.duplitable {
+	text-align: center;
+	vertical-align: top;
+	text-align: center;
+	width: 100%;
+}
+
+.bgcolor1 {
+	background-color: #EAF5FF;
+}
+
+.bgcolor2 {
+	background-color: #F4FAFF;
+}
+
+input {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+dl dt { margin: 0 0 1px 15px; font-weight: bold; }
+dl dd { margin: 0 0 12px 30px; } 

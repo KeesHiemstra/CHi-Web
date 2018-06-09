@@ -1,0 +1,36 @@
+/* Template stylesheets for help files */
+
+/* tag styles */
+body, table {
+	border: 0;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+h1 {
+  color: Blue;
+}
+
+h2 {
+  color: Blue;
+  font-style: italic;
+}
+
+select {
+	border: 1px black solid;
+	font-family: verdana,Sans-Serif;
+	font-size: 8pt;
+	height: 12pt;
+	width: 300px;
+}
+
+a {
+	color: Blue;
+	text-decoration: underline;
+}
+
+a:hover {
+  color: Red;
+	text-decoration: underline;
+}
+

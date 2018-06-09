@@ -1,0 +1,180 @@
+<!DOCTYPE HTML PUBLIC "HTML 4.01 Transitional" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type"     content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Content-Language" content="en">
+<meta name="ROBOTS"                 content="ALL">
+<meta name="description" lang=en    content="Online help on PowerShell cmdlet created by Kees Hiemstra">
+<meta name="keywords"    lang=en    content="cmdlet,powershell,online help">
+<meta name="author"      lang=en    content="Kees Hiemstra - chi@xs4all.nl">
+<meta name="publisher"   lang=en    content="Kees Hiemstra - chi@xs4all.nl">
+<title>Online help</title>
+<link rel="stylesheet" type="text/css" href="ps.css">
+<script type="text/javascript" language="JavaScript1.2" src="./default/chi.js"></script>
+</head>
+<body>
+<h1>Get-SOEComputerBIOS</h1>
+<h2>Synopsis</h2>
+<p>Gets the BIOS data from the local computer or a remote computer.</p>
+
+<h2>Syntax</h2>
+<h3>ComputerName (Default)</h3>
+<table><tr><td>Get-SOEComputerBIOS [-ComputerName] &lt;String&gt; [-Credential &lt;PSCredential&gt; [-WhatIf] [-Confirm] [&lt;CommonParameters&gt;]
+</td></tr></table>
+
+<h2>Description</h2>
+<p>The <b>Get-SOEComputerBIOS</b> cmdlet gets a select part of BIOS data from the local or remote computer through WMI as <b>SOE.ComputerBIOS.100 object</b>.</p>
+<p>The BIOS data contains the following attributes:</p>
+<ul>
+<li>ComputerName</li>
+<li>SerialNo</li>
+<li>Vendor</li>
+<li>Name</li>
+<li>ReleaseDate</li>
+<li>SMBIOSPresent</li>
+<li>SMBIOSBIOSVersion</li>
+<li>SMBIOSMajorVersion</li>
+<li>SMBIOSMinorVersion</li>
+<li>Version</li>
+<li>BiosCharacteristics</li>
+<li>DTCollection</li>
+</ul>
+
+<h2>Examples</h2>
+<h3>Example 1: Get BIOS data from the local computer</h3>
+<table><tr><td>PS C:\&gt;Get-SOEComputerModel -ComputerName .
+
+ComputerName        : KING001
+SerialNo            : CZC552KING
+Vendor              : Hewlett-Packard
+Name                : Default System BIOS
+ReleaseDate         : 2015-10-29 00:00:00
+SMBIOSPresent       : True
+SMBIOSBIOSVersion   : 786G3 v03.15
+SMBIOSMajorVersion  : 2
+SMBIOSMinorVersion  : 6
+Version             : HPQOEM – 20151029
+BiosCharacteristics : 7;9;11;12;15;16;19;21;24;26;27;28;29;32;33;36;37;40;41;42;48;49;56;57;58;59;64;65;66;67;68;69;70;71;72;73;74;75;76;77;78;79
+DTCollection        : 2015-12-21 12:01:17
+
+</td></tr></table>
+<p>This command gets the BIOS data from the local computer.</p>
+
+<h2>Parameters</h2>
+<h3>-ComputerName &lt;string&gt;</h3>
+<p>Specifies the computer for which this cmdlet gets the BIOS data.</p>
+<table><tr><td>Required?                    true
+Position?                    1
+Default value                
+Accept pipeline input?       true (ByValue, ByPropertyName)
+Accept wildcard characters?  false
+</td></tr></table>
+<h3>-Credential &lt;PSCredential&gt;</h3>
+<p>Specifies the user account credentials to use to perform this task. The default credentials are the credentials of the currently logged on user unless the cmdlet is run from an Active Directory PowerShell provider drive. If the cmdlet is run from such a provider drive, the account associated with the drive is the default.</p>
+<p>To specify this parameter, you can type a user name, such as &quot;User1&quot; or &quot;Domain01\User01&quot; or you can specify a PSCredential object. If you specify a user name for this parameter, the cmdlet prompts for a password. </p>
+<p>You can also create a PSCredential object by using a script or by using the Get-Credential cmdlet. You can then set the Credential parameter to the PSCredential object </br>
+The following example shows how to create credentials.</br>
+$AdminCredentials = Get-Credential &quot;Domain01\User01&quot;</br>
+The following shows how to set the Credential parameter to these credentials.</br>
+-Credential $AdminCredentials</p>
+<p>If the acting credentials do not have directory-level permission to perform the task, Active Directory PowerShell returns a terminating error.</p>
+<table><tr><td>Required?                    false
+Position?                    named
+Default value                
+Accept pipeline input?       false
+Accept wildcard characters?  false
+</td></tr></table>
+<h3>-Confirm [&lt;SwitchParameter&gt;]</h3>
+<p>Prompts you for confirmation before running the cmdlet.</p>
+<table><tr><td>Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+</td></tr></table>
+<h3>-WhatIf [&lt;SwitchParameter&gt;]</h3>
+<p>Shows what would happen if the cmdlet runs. The cmdlet is not run.</p>
+<table><tr><td>Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+</td></tr></table>
+<h3>CommonParameters</h3>
+<p>This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see <a href="http://go.microsoft.com/fwlink/?LinkID=113216">about_CommonParameters</a>.</p>
+<h2>Inputs</h2>
+<p>&lt;string&gt;</p>
+<h2>Outputs</h2>
+<h3>SOE.ComputerBIOS.100</h3>
+<p>This cmdlet returns a named System.Management.Automation.PSCustomObject object called SOE.ComputerBIOS.100.</p>
+<b>Table information</b>
+<p>Saving the output of this cmdlet with the Save-SOEObject cmdlet in an SQL table requires the following table structure.</p>
+<table><tr><td>CREATE TABLE dbo.ComputerBIOS(
+    [ID] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,
+    [ComputerName] [varchar](25) NOT NULL,
+    [SerialNo] [varchar](75) NOT NULL,
+    [Vendor] [varchar](50) NOT NULL,
+    [Name] [varchar](50) NOT NULL,
+    [ReleaseDate] [date] NOT NULL,
+    [SMBIOSPresent] [bit] NULL,
+    [SMBIOSBIOSVersion] [varchar](50) NULL,
+    [SMBIOSMajorVersion] [smallint] NULL,
+    [SMBIOSMinorVersion] [smallint] NULL,
+    [Version] [varchar](50) NOT NULL,
+    [BIOSCharacteristics] [varchar](255) NOT NULL,
+    [DTCollection] [datetime] NOT NULL,
+    [DTCreation] [datetime] NOT NULL CONSTRAINT [DF_ComputerBIOS_DTCreation] DEFAULT (GETDATE()),
+    [DTMutation] [datetime] NULL,
+    [DTDeletion] [datetime] NULL
+    )
+</td></tr></table>
+<h2>Notes</h2>
+<h3>Version history</h3>
+<p>Version 1.10 (2016-10-31, Kees Hiemstra)</p>
+<ul>
+<li>Added parameter Credential.</li>
+</ul>
+<p>Version 1.01 (2015-12-22, Kees Hiemstra)</p>
+<ul>
+<li>Bug fix: Increased the size of the [SerialNo] field from 50 to 75 in the database table.</li>
+</ul>
+<p>Version 1.00 (2015-12-21, Kees Hiemstra)</p>
+<ul>
+<li>Initial version.</li>
+</ul>
+<h2>Component</h2>
+<p>Initially this cmdlet is created to investigate computer characteristics in an investigation to examine reoccurring Blue Screens of Death.</p>
+<p>The prefix SOE is derived from the name of our team and stands for Standard Operation Environment.</p>
+<h2>Related links</h2>
+<p>
+<a href="http://www.xs4all.nl/~chi/ps/oh1549701.html">Get-SOEComputerModel</a></br>
+<a href="http://www.xs4all.nl/~chi/ps/oh1549702.html">Get-SOEComputerOS</a></br>
+<a href="http://www.xs4all.nl/~chi/ps/oh1550101.html">Get-SOEComputerBSoDEvents</a></br>
+<a href="http://www.xs4all.nl/~chi/ps/oh1550301.html">Get-SOEComputerNICDetails</a></br>
+<a href="http://www.xs4all.nl/~chi/ps/oh1550302.html">Get-SOEComputerSignedDrivers</a></br>
+<a href="http://www.xs4all.nl/~chi/ps/oh1550701.html">Get-SOEComputerRunKeys</a></br>
+<a href="http://www.xs4all.nl/~chi/ps/oh1551701.html">Get-SOEComputerPatches</a></br>
+<a href="http://www.xs4all.nl/~chi/ps/oh1621401.html">Get-SOEComputerUserFirewallRules</a></br>
+<a href="http://www.xs4all.nl/~chi/ps/oh1621301.html">Get-SOEComputerPolicyFirewallRules</a></br>
+<a href="http://www.xs4all.nl/~chi/ps/oh1623101.html">Get-SOEComputerWifiProfile</a></br>
+<a href="http://www.xs4all.nl/~chi/ps/oh1623401.html">Get-SOEComputerWifiSignature</a></br>
+<a href="http://www.xs4all.nl/~chi/ps/oh1550601.html">Save-SOEObject</a></br>
+</p>
+<hr noshade size="1">
+<table summary="Page footer" border="0" width="100%" style="font-size: 8pt; color: #FF9966; font-family: Arial, Helvetica, sans-serif; padding: 0">
+<tr style="padding: 0">
+<td width="33%" style="padding: 0"><a href="mailto:chi@xs4all.nl"><img src="../images/envelope.gif" alt="Send me an email" usemap="#mapemail" border=0 align=left width="37" height="38"></a></td>
+<td width="33%" align="center" style="padding: 0">
+Copyright &copy; 1995-2017 Kees Hiemstra<br />Modified on: <script type="text/javascript" language="JavaScript">document.write(document.lastModified)</script>
+</td><td width="34%" align="right" style="padding: 0"><a href="./index.html">Other cmdlets</a></td>
+</tr>
+</table>
+</div>
+</body>
+</html>

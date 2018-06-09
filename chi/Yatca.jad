@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+MIDlet-Version: 1.8.2
+MIDlet-Jar-Size: 251550
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Jar-URL: Yatca.jar
+RIM-COD-Module-Dependencies: net_rim_cldc,net_rim_locationapi,net_rim_os,net_rim_xml_org,net_rim_bbapi_browser,net_rim_bbapi_invoke,net_rim_bbapi_messagelist,net_rim_xml,net_rim_bb_framework_api,net_rim_bbapi_menuitem
+RIM-COD-URL-1: Yatca-1.cod
+RIM-COD-SHA1-1: 25 1c 06 6a 85 a4 b0 73 7e 64 39 99 c8 29 41 30 a6 57 bc 7e
+RIM-MIDlet-Flags-1: 1
+RIM-COD-Size-1: 32012
+RIM-COD-Module-Name: Yatca
+RIM-COD-Size: 69872
+MIDlet-Name: Yatca
+RIM-COD-Creation-Time: 1261513004
+MIDlet-1: Yatca,img/MainIcon80x80.png,
+RIM-COD-URL: Yatca.cod
+MIDlet-Description: Yet another Twitter client application!
+RIM-MIDlet-NameResourceId-1: 0
+RIM-COD-SHA1: 05 4c 94 ae 1a 6a 97 f4 a3 e9 41 dc 0e 5f 30 0d 95 3d df a8
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Vendor: DMC
+RIM-MIDlet-NameResourceBundle-1: com.yatca.Yatca
+RIM-TouchCompatibilityMode: false
+RIM-TouchCompatibilityMode-UserChangeable: true

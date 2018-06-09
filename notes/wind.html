@@ -1,0 +1,398 @@
+<!DOCTYPE HTML PUBLIC "HTML 4.01 Transitional" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta http-equiv="Content-Language" content="nl">
+    <meta name="ROBOTS"              content="ALL">
+    <meta name="description" lang=NL content="Snelheid">
+    <meta name="keywords"    lang=NL content="Wind;Windsnelheid">
+    <meta name="author"      lang=NL content="Kees Hiemstra - chi@xs4all.nl">
+    <meta name="publisher"   lang=NL content="CHI Software and Research - chi@xs4all.nl">
+    <title>Snelheid</title>
+    <link rel="stylesheet" type="text/css" href="../default/chi.css">
+    <script type="text/javascript" language="JavaScript1.2" src="../default/chi.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+    function ms2km()
+    {
+    var ims=document.sheet.ms.value * 1.00;
+       document.sheet.ku.value = ims * 3.6;
+       return;
+    }
+    </script>
+  </head>
+  
+  <body>
+    <a name="top"></a>
+    <div align="left">
+      <table summary="page heading" border="0" width="100%">
+        <tr>
+          <td width="100%">
+            <img border="0" src="../images/banner.jpg" alt="Page header" align="middle" width="100%" height="85"></td>
+        </tr>
+      </table>
+    </div>
+    <!-- Main menu -->
+    <div align="left">
+      <table summary="main menu" border="0" width="100%" cellspacing="1">
+        <tr>
+          <td width="5%" bgcolor="#FF9933" style="font-size: 8pt">
+          </td>
+          <td width="15%" bgcolor="#FF9933" style="font-size: 8pt" onMouseOver="lnkIn(this,'Home page');return true" onMouseOut="lnkOut(this); return true" onClick="parent.location.href='../index.html'">
+            <h5>Home</h5>
+          </td>
+          <td width="15%" bgcolor="#FF9933" style="font-size: 8pt" onMouseOver="lnkIn(this,'Open info');return true" onMouseOut="lnkOut(this); return true" onClick="parent.location.href='../openinfo/index.html'">
+            <h5>Open info</h5>
+          </td>
+          <td width="15%" bgcolor="#FF9933" style="font-size: 8pt" onMouseOver="lnkIn(this,'Snippets');return true" onMouseOut="lnkOut(this); return true" onClick="parent.location.href='../snippets/index.html'">
+            <h5>Snippets</h5>
+          </td>
+          <td width="15%" bgcolor="#FF9933" style="font-size: 8pt" onMouseOver="lnkIn(this,'Links');return true" onMouseOut="lnkOut(this); return true" onClick="parent.location.href='../links/index.html'">
+            <h5>Links</h5>
+          </td>
+          <td width="15%" bgcolor="#FF9933" style="font-size: 8pt" onMouseOver="lnkIn(this,'Notities');return true" onMouseOut="lnkOut(this); return true" onClick="parent.location.href='../notes/index.html'">
+            <h5>Notities</h5>
+          </td>
+          <td width="15%" bgcolor="#FF9933" style="font-size: 8pt" onMouseOver="lnkIn(this,'Utilities (English)');return true" onMouseOut="lnkOut(this); return true" onClick="parent.location.href='../utilities/index.html'">
+            <h5>Utilities (uk)</h5>
+          </td>
+          <td width="5%" bgcolor="#FF9933" style="font-size: 8pt">
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div align="left">
+      <table summary="seperator" border="0" width="100%" cellspacing="1">
+        <tr>
+          <td width="100%" height="20" colspan="2" style="font-size: 14pt; font-weight: bold">
+          	<h1>Notities</h1>
+          </td>
+        </tr>
+        <tr>
+          <td width="20%" valign="top">&nbsp;</td>
+          <td valign="top" width="80%" height="0"></td>
+        </tr>
+        <tr>
+          <td width="20%" valign="top">
+            <div align="left">
+              <table summary="page menu" border="0" cellspacing="1" width="90%">
+                <tr>
+                  <td width="100%" bgcolor="#FF9933" onMouseOver="lnkIn(this,'Notities');return true" onMouseOut="lnkOut(this); return true" onClick="parent.location.href='index.html'">
+                    <h5>Notities</h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td width="100%" bgcolor="#FF9933" onMouseOver="lnkIn(this,'Ballonnetjes om op te laten?');return true" onMouseOut="lnkOut(this); return true" onClick="parent.location.href='ballonnetjes.html'">
+                    <h5>Ballonnetjes</h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="100%" bgcolor="#FF9933" onMouseOver="lnkIn(this,'Wanneer valt pasen?');return true" onMouseOut="lnkOut(this); return true" onClick="parent.location.href='data.html#pasen'">
+                    <h5>Pasen</h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="100%" bgcolor="#FF9933" onMouseOver="lnkIn(this,'Hoe hard waait het?');return true" onMouseOut="lnkOut(this); return true" onClick="parent.location.href='wind.html#windsnelheid'">
+                    <h5>Windsnelheid</h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="100%" bgcolor="#FF9933" onMouseOver="lnkIn(this,'Hoe hard waait het?');return true" onMouseOut="lnkOut(this); return true" onClick="parent.location.href='zomaar.html'">
+                    <h5>Zomaar</h5>
+                  </td>
+                </tr>
+<!--
+                <tr>
+                  <td width="100%" bgcolor="#FF9933" onMouseOver="lnkIn(this,'item');return true" onMouseOut="lnkOut(this); return true" onClick="parent.location.href='item.html'">
+                    <h5>item</h5>
+                  </td>
+                </tr>
+-->
+              </table>
+            </div>
+          </td>
+          <td valign="top" width="80%">
+            <a name="windsnelheid"></a>
+            <h4>Windsnelheid</h4>
+            <p>De windsnelheid wordt gemeten in Baufort. De definitie tussen de offici&euml;le standaard en het 
+            KNMI verschilt enigszins. In de onderstaande tabellen wordt zowel de <a href="#baufort">standaard</a>
+            als de definitie van het <a href="#KNMI">KMNI</a> weergegeven.
+            <p>De windsnelheden worden gemeten in meter per seconde [m/s]. Deze meting wordt verricht op 10 
+            meter boven de grond in een vrije omgeving (dus zonder beschutting). Een omrekening van meter per 
+            seconde naar kilometer per uur is aan het einde van deze pagina opgenomen.
+ 
+            <a name="baufort"></a>
+            <h3>Baufort</h3>
+            <table summary="Baufort" border=1>
+              <tr>
+                <td width="5%"><b>Wind-<br>sterkte</b></td>
+                <td width="10%"><b>Snelheid<br>[m/s]</b></td>
+                <td width="15%"><b>Omschrijving</b></td>
+                <td width="70%"><b>Omschrijving zeeoppervlakte</b></td>
+              </tr>
+              <tr>
+                <td><b>0</b></td>
+                <td>0.0-0.2</td>
+                <td>Stil</td>
+                <td>Spiegelgladde zee</td>
+              </tr>
+              <tr>
+                <td><b>1</b></td>
+                <td>0.3-1.5</td>
+                <td>Flauw en stil</td>
+                <td>Golfjes, geschubde zee</td>
+              </tr>
+              <tr>
+                <td><b>2</b></td>
+                <td>1.6-3.3</td>
+                <td>Flauwe koelte</td>
+                <td>Kleine korte golven, glasachtig</td>
+              </tr>
+              <tr>
+                <td><b>3</b></td>
+                <td>3.4-5.4</td>
+                <td>Lichte koelte</td>
+                <td>Kleine golven, brekende toppen geven glasachtig schuim</td>
+              </tr>
+              <tr>
+                <td><b>4</b></td>
+                <td>5.5-7.9</td>
+                <td>Matige koelte</td>
+                <td>Langere golven, witte schuimkoppen</td>
+              </tr>
+              <tr>
+                <td><b>5</b></td>
+                <td>8.0-10.7</td>
+                <td>Frisse bries</td>
+                <td>Matige golven met witte schuimkoppen, soms opwaaiend schuim</td>
+              </tr>
+              <tr>
+                <td><b>6</b></td>
+                <td>10.8-13.8</td>
+                <td>stevige bries</td>
+                <td>Grotere golven, brekende koppen geven witte schuimplekken</td>
+              </tr>
+              <tr>
+                <td><b>7</b></td>
+                <td>13.9-17.1</td>
+                <td>Harde bries</td>
+                <td>Hogere golven, wit schuim vormt windstrepen</td>
+              </tr>
+              <tr>
+                <td><b>8</b></td>
+                <td>17.2-20.7</td>
+                <td>Stormachtig</td>
+                <td>Hoge golven met lange kam, afwaaiende toppen geven schuimstrepen</td>
+              </tr>
+              <tr>
+                <td><b>9</b></td>
+                <td>20.8-24.4</td>
+                <td>Storm</td>
+                <td>Zware schuimstrepen, beginnende rollers, verwaaid schuim geeft slecht zicht</td>
+              </tr>
+              <tr>
+                <td><b>10</b></td>
+                <td>24.5-28.4</td>
+                <td>Zware storm</td>
+                <td>Zeer hoge golven met lange overstortende golfkamen, begin witte zee, zware overslaande rollers</td>
+              </tr>
+              <tr>
+                <td><b>11</b></td>
+                <td>28.5-32.6</td>
+                <td>Zeer zware storm</td>
+                <td>Golfkammen verwaaien overal, zee geheel bedekt met schuimstrepen, zeer slecht zicht</td>
+              </tr>
+              <tr>
+                <td><b>12</b></td>
+                <td>32.7-36.9</td>
+                <td>Orkaan</td>
+                <td>Lucht geheel gevult met schuim en water, geheel witte zee, geen zicht</td>
+              </tr>
+              <tr>
+                <td><b>13</b></td>
+                <td>37.0-41.4</td>
+                <td>Orkaan</td>
+                <td>Lucht geheel gevult met schuim en water, geheel witte zee, geen zicht</td>
+              </tr>
+              <tr>
+                <td><b>14</b></td>
+                <td>41.5-46.1</td>
+                <td>Orkaan</td>
+                <td>Lucht geheel gevult met schuim en water, geheel witte zee, geen zicht</td>
+              </tr>
+              <tr>
+                <td><b>15</b></td>
+                <td>46.2-50.9</td>
+                <td>Orkaan</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <td><b>16-17</b></td>
+                <td>meer dan<br>51.0</td>
+                <td>Orkaan</td>
+                <td>...</td>
+              </tr>
+            </table>
+
+            <a name="KNMI"></a>
+            <h3>KNMI</h3>
+            <table summary="KMNI" border=1>
+              <tr>
+                <td width="5%"><b>Wind-<br>sterkte</b></td>
+                <td width="10%"><b>Snelheid<br>[m/s]</b></td>
+                <td width="15%"><b>Omschrijving</b></td>
+                <td width="70%"><b>Omschrijving volgens het KNMI</b></td>
+              </tr>
+              <tr>
+                <td><b>0</b></td>
+                <td>0</td>
+                <td>Windstil</td>
+                <td>Rook stijgt wrijwel recht omhoog</td>
+              </tr>
+              <tr>
+                <td><b>1</b></td>
+                <td>0-3</td>
+                <td>Zwakke wind</td>
+                <td>Rookpluimen geven windrichting aan</td>
+              </tr>
+              <tr>
+                <td><b>2</b></td>
+                <td>...</td>
+                <td>...</td>
+                <td>Bladeren en windvanen bewegen</td>
+              </tr>
+              <tr>
+                <td><b>3</b></td>
+                <td>3-8</td>
+                <td>Matige wind</td>
+                <td>Bladeren en twijgen bewegen voortdurend</td>
+              </tr>
+              <tr>
+                <td><b>4</b></td>
+                <td>...</td>
+                <td>...</td>
+                <td>Kleine takken beginnen te bewegen, stof en papier dwarelt op</td>
+              </tr>
+              <tr>
+                <td><b>5</b></td>
+                <td>8-11</td>
+                <td>Vrij krachtige wind</td>
+                <td>Bebladerde takken zwaaien, gekuifde golven</td>
+              </tr>
+              <tr>
+                <td><b>6</b></td>
+                <td>11-14</td>
+                <td>Krachtige wind</td>
+                <td>Grote takken bewegen, wind fluit en zoemt</td>
+              </tr>
+              <tr>
+                <td><b>7</b></td>
+                <td>14-17</td>
+                <td>Harde wind</td>
+                <td>Bomen bewegen, wind is hinderlijk</td>
+              </tr>
+              <tr>
+                <td><b>8</b></td>
+                <td>17-20</td>
+                <td>Stormachtige wind</td>
+                <td>Twijgen breken af, voortgaan wordt bemoeilijkt</td>
+              </tr>
+              <tr>
+                <td><b>9</b></td>
+                <td>20-24</td>
+                <td>Storm</td>
+                <td>Lichte schade, dakpannen waaien af</td>
+              </tr>
+              <tr>
+                <td><b>10</b></td>
+                <td>24-28</td>
+                <td>Zware storm</td>
+                <td>Ontwortelde bomen, aanzienlijke schade</td>
+              </tr>
+              <tr>
+                <td><b>11</b></td>
+                <td>28-32</td>
+                <td>Zeer zware storm</td>
+                <td>Uitgebreide schade</td>
+              </tr>
+              <tr>
+                <td><b>12</b></td>
+                <td>32-37</td>
+                <td>Orkaan</td>
+                <td>Ernstige verwoesting</td>
+              </tr>
+              <tr>
+                <td><b>13</b></td>
+                <td>37-41</td>
+                <td>Orkaan</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <td><b>14</b></td>
+                <td>41-46</td>
+                <td>Orkaan</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <td><b>15</b></td>
+                <td>46-51</td>
+                <td>Orkaan</td>
+                <td>Totale verwoesting</td>
+              </tr>
+              <tr>
+                <td><b>16-17</b></td>
+                <td>meer dan<br>51</td>
+                <td>Orkaan</td>
+                <td>...</td>
+              </tr>
+            </table>
+
+            <a name="omrekening"></a>
+            <h3>Omrekenen</h3>
+            <form name="sheet">
+              <table summary="Omrekenen">
+                <tr>
+                  <td>
+                    Snelheid [m/s]:
+                  </td>
+                  <td>
+                    <input type=text name="ms" size=5> m/s
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="button" value="Omrekenen" onclick="ms2km()">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Snelheid [km/u]:
+                  </td>
+                  <td>
+                    <input type=text name="ku" size=5> km/u
+                  </td>
+                </tr>
+              </table>
+            </form>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <hr noshade size="1">
+    <div align="left">
+      <table summary="Page footer" border="0" width="100%">
+        <tr>
+          <td width="33%"><a href="mailto:chi@xs4all.nl"><img src="../images/envelope.gif" alt="Send me an email" usemap="#mapemail" border=0 align=left width="37" height="38"></a></td>
+          <td width="33%" style="font-size: 8pt; color: #FF9966">
+            <p align="center">Copyright &copy; 1995-2002 Kees Hiemstra<br>Modified on: <script type="text/javascript" language="JavaScript">document.write(document.lastModified)</script>
+          </td>
+          <td width="34%"></td>
+        </tr>
+      </table>
+    </div>
+    
+    </body>
+
+</html>

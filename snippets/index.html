@@ -1,0 +1,150 @@
+<!DOCTYPE HTML PUBLIC "HTML 4.01 Transitional" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type"     content="text/html; charset=ISO-8859-1">
+    <meta http-equiv="Content-Language" content="uk">
+    <meta name="ROBOTS"                 content="ALL">
+    <meta name="description" lang=NL    content="Snippets">
+    <meta name="keywords"    lang=NL    content="Snippets, Delphi, Hiemstra">
+    <meta name="author"      lang=NL    content="Kees Hiemstra - chi@xs4all.nl">
+    <meta name="publisher"   lang=NL    content="CHI Software and Research - chi@xs4all.nl">
+    <title>Snippets</title>
+    <link rel="stylesheet" type="text/css" href="../default/chi.css">
+    <script type="text/javascript" language="JavaScript1.2" src="../default/chi.js"></script>
+  </head>
+  <body>
+
+  <div align="left">
+    <table border="0" width="100%">
+      <tr>
+        <td width="100%"><map name="FPMap0">
+          <img border="0" src="../images/banner.jpg" align="absmiddle" width="100%" height="85" usemap="#FPMap0"></td>
+      </tr>
+    </table>
+  </div>
+  <a name="top"></a>
+  <!-- Main menu -->
+  <div align="left">
+    <table border="0" width="100%" cellspacing="1">
+      <tr>
+        <td width="5%" bgcolor="#FF9933" style="font-size: 8pt">
+        </td>
+        <td width="15%" bgcolor="#FF9933" style="font-size: 8pt" onMouseOver="lnkIn(this,'Home page');return true" onMouseOut="lnkOut(this); return true" onClick="parent.location.href='../index.html'">
+          <h5>Home</h5>
+        </td>
+        <td width="15%" bgcolor="#FF9933" style="font-size: 8pt" onMouseOver="lnkIn(this,'Open info');return true" onMouseOut="lnkOut(this); return true" onClick="parent.location.href='../openinfo/index.html'">
+          <h5>Open info</h5>
+        </td>
+        <td width="15%" bgcolor="#FF9933" style="font-size: 8pt" onMouseOver="lnkIn(this,'Snippets');return true" onMouseOut="lnkOut(this); return true" onClick="parent.location.href='../snippets/index.html'">
+          <h5>Snippets</h5>
+        </td>
+        <td width="15%" bgcolor="#FF9933" style="font-size: 8pt" onMouseOver="lnkIn(this,'Links');return true" onMouseOut="lnkOut(this); return true" onClick="parent.location.href='../links/index.html'">
+          <h5>Links</h5>
+        </td>
+        <td width="15%" bgcolor="#FF9933" style="font-size: 8pt" onMouseOver="lnkIn(this,'Notities');return true" onMouseOut="lnkOut(this); return true" onClick="parent.location.href='../notes/index.html'">
+          <h5>Notities</h5>
+        </td>
+        <td width="15%" bgcolor="#FF9933" style="font-size: 8pt" onMouseOver="lnkIn(this,'Utilities (English)');return true" onMouseOut="lnkOut(this); return true" onClick="parent.location.href='../utilities/index.html'">
+          <h5>Utilities (uk)</h5>
+        </td>
+        <td width="5%" bgcolor="#FF9933" style="font-size: 8pt">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div align="left">
+    <table border="0" width="100%" cellspacing="1">
+      <tr>
+        <td width="100%" height="20" colspan="2" style="font-size: 14pt; font-weight: bold">
+        	<h1>Snippets</h1>
+        </td>
+      </tr>
+      <tr>
+        <td width="20%" valign="top">&nbsp;
+        </td>
+        <td valign="top" width="80%" height="0">
+        </td>
+      </tr>
+      <tr>
+        <td width="20%" valign="top" rowspan="4">
+          <div align="left">
+            <table border="0" cellspacing="1" width="90%">
+              <tr>
+<!--
+                <td width="100%" bgcolor="#FF9933" onMouseOver="lnkIn(this,'item');return true" onMouseOut="lnkOut(this); return true" onClick="parent.location.href='item.html'">
+                  <h5>item</h5>
+                </td>
+-->
+              </tr>
+            </table>
+          </div>
+        </td>
+        <td valign="top" width="80%">
+<!--
+          <h4>datum</h4>
+          <p>.Tekst.
+          <font size="2"><b><a href="#top"><img border="0" src="images/arrow_up.gif" alt="Goto the top of this page" align="right" width="8" height="9"></a></b></font></p>
+
+-->
+          <h4>Delphi: String library</h4>
+          <p>In allmost all my programs I have to manipulate strings. In the years I have collected the functions that I use most in my <a href="CHIStr.pas" alt="Delphi source">ChiStr</a> library. It contains the following functions:
+          <ul>
+            <li><b>BackPos</b><br>
+              Searching backwards
+            <li><b>LeftStr</b><br>
+              Returns the left of the string from start position
+            <li><b>RightStr</b><br>
+              Returns the right of the string from start position
+            <li><b>EndStr</b><br>
+              Returns the remaining string from start position
+            <li><b>LTrim</b><br>
+              Returns the string without leading spaces and tabs
+            <li><b>RTrim</b><br>
+              Returns the string without trailing spaces and tabs
+            <li><b>LongInt2Base36</b><br>
+              Translates an integer to a number based on 36 characters (instead of 2 {binary}, 8 {octal}, 10 {decimal} or 16 {hexadecimal})
+            <li><b>ReplaceStr</b><br>
+              Replaces all occurences of the given string
+            <li><b>IntToStrF</b><br>
+              Returns a string from an integer with digitgrouping
+            <li><b>SplitSeparator</b><br>
+              Splits string on given separator
+            <li><b>PosAt</b><br>
+              Searching for a string from start position
+            <li><b>PosNum</b><br>
+              Returns the number of occurences of string
+          </ul>
+          <font size="2"><b><a href="#top"><img border="0" src="images/arrow_up.gif" alt="Goto the top of this page" align="right" width="8" height="9"></a></b></font></p>
+
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" width="80%" height="0">
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" width="80%" height="0">&nbsp;
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" width="80%" height="0">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <hr noshade size="1">
+  <div align="left">
+    <table border="0" width="100%">
+      <tr>
+        <td width="33%"><a href="mailto:chi@xs4all.nl"><img src="../images/envelope.gif" alt="Send me an email" usemap="#mapemail" border=0 align=left width="37" height="38"></a></td>
+        <td width="33%" style="font-size: 8pt; color: #FF9966">
+          <p align="center">Copyright &copy; 1995-2003 Kees Hiemstra<br>Modified on: <script type="text/javascript" language="JavaScript">document.write(document.lastModified)</script>
+        </td>
+        <td width="34%"><!--<a target="_blank" href="http://v1.nedstatbasic.net/stats?AAqotwdEgxnQlYbGOfuZN+bZBXGA"><img src="http://m1.nedstatbasic.net/n?id=AAqotwdEgxnQlYbGOfuZN+bZBXGA" alt="NedStat" border="0" width="32" height="32" align=right></a>--></td>
+      </tr>
+    </table>
+  </div>
+
+  </body>
+
+</html>

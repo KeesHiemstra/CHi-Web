@@ -1,0 +1,47 @@
+BODY {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+  text-align: center;
+  }
+
+DIV.Header {
+  text-align: left;
+  width: 980px;
+  }
+
+DIV.HeaderLogo {
+  float:left; 
+  width:87;
+  }
+
+DIV.HeaderWebTitle {
+  background-color: #FF0033;
+  color: #ffffff;
+  font-size: 20px; 
+  float: right; 
+  height: 31px;
+  text-align: center; 
+  vertical-align: middle; 
+  }
+
+DIV.HeaderPageTitle {
+  font-size: 24px; 
+  float: right;
+  height: 80px;
+  text-align: center; 
+  vertical-align: middle;
+  width: 796px
+  }
+
+DIV.HeaderLinks {
+  float: right;
+  height: 80px;
+  text-align: right; 
+  width: 92px
+  }
+
+DIV.Body {
+  text-align: left;
+  width: 980px;
+  }
+
